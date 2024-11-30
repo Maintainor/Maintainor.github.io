@@ -18,7 +18,7 @@ a {
     color: inherit;
 }
 
-/* Header & Navigation */
+/* Header & Navigation (Exact same as Homepage) */
 header {
     background-color: #2c3e50; /* Dark background for header */
     color: #fff;
@@ -45,7 +45,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section */
+/* Hero Section (Exact same style as Homepage) */
 .hero {
     background-color: #3498db; /* Blue background for hero section */
     color: #fff;
@@ -77,7 +77,7 @@ nav a:hover {
     background-color: #27ae60; /* Darker green for hover */
 }
 
-/* Services Section */
+/* Services Section (Matching Homepage Layout) */
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +152,7 @@ nav a:hover {
     background-color: #27ae60; /* Darker green for hover */
 }
 
-/* Footer */
+/* Footer (Identical to homepage footer) */
 footer {
     background-color: #2c3e50; /* Dark footer */
     color: #fff;
