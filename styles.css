@@ -1,54 +1,52 @@
-/* General Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Body and Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text for contrast */
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light background color */
-    color: #333;
 }
 
-/* Global Links */
-a {
-    text-decoration: none;
-    color: inherit;
+h1, h2, h3 {
+    color: #2c3e50; /* Dark blue for headings */
 }
 
-/* Header & Navigation (Navbar for both pages) */
+/* Header (Navbar) */
 header {
-    background-color: #2c3e50; /* Dark background for header */
-    color: #fff;
+    background-color: #3498db; /* Bright blue background */
     padding: 20px 0;
+    text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+nav .logo h1 {
+    color: #fff; /* White logo text */
+    font-size: 2rem;
 }
 
-nav a {
+nav .nav-links {
+    margin-top: 10px;
+}
+
+nav .nav-links a {
     color: #fff;
-    font-size: 1.2rem;
-    padding: 10px;
-    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #3498db; /* Highlight link on hover */
-    border-radius: 5px;
+nav .nav-links a:hover {
+    color: #ecf0f1; /* Light gray hover effect */
 }
 
-/* Hero Section (Homepage and Services Page) */
+/* Hero Section */
 .hero {
-    background-color: #3498db; /* Blue background for hero section */
+    background-color: #2ecc71; /* Fresh green background */
     color: #fff;
     text-align: center;
     padding: 80px 20px;
@@ -56,106 +54,141 @@ nav a:hover {
 
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
 .hero .cta-button {
-    background-color: #2ecc71; /* Green CTA button */
-    color: #fff;
+    background-color: #ecf0f1; /* Light gray background */
+    color: #2c3e50;
     padding: 12px 25px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .hero .cta-button:hover {
-    background-color: #27ae60; /* Darker green for hover */
+    background-color: #bdc3c7; /* Darker gray for hover effect */
 }
 
-/* Section Containers (for homepage, services, etc.) */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Services Section */
-.services {
+/* About Section */
+.about {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background for services section */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #ffffff; /* White background */
 }
 
-.service-item {
-    background-color: #fff; /* White background for each service item */
-    padding: 20px;
-    width: 45%;
-    margin: 15px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for service boxes */
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+.about .about-text {
+    width: 60%;
 }
 
-.service-item:hover {
-    transform: translateY(-10px); /* Hover effect for service box */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.service-icon img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
-
-.service-item h3 {
-    color: #3498db; /* Bright blue for service headings */
-    font-size: 1.8rem;
+.about h2 {
+    color: #3498db; /* Bright blue for headings */
     margin-bottom: 15px;
 }
 
-.service-item p {
+.about p {
     font-size: 1.1rem;
-    color: #333;
     margin-bottom: 20px;
 }
 
-.service-item ul {
-    list-style-type: none;
-    padding: 0;
+.about .cta-button {
+    background-color: #3498db; /* Bright blue */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.service-item ul li {
-    font-size: 1rem;
-    color: #555;
+.about .cta-button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.testimonial-card p {
+    font-style: italic;
     margin-bottom: 10px;
 }
 
-.service-item ul li::before {
-    content: "✔️";
-    margin-right: 8px;
-    color: #3498db; /* Blue checkmark for list items */
+.testimonial-card cite {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2ecc71; /* Fresh green */
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact .cta-button {
+    background-color: #fff;
+    color: #2c3e50;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact .cta-button:hover {
+    background-color: #bdc3c7; /* Gray for hover effect */
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50; /* Dark footer */
+    background-color: #3498db;
     color: #fff;
-    text-align: center;
     padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
+    text-align: center;
 }
 
 footer a {
@@ -165,30 +198,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #3498db; /* Blue hover effect */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        width: 90%;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .cta-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
+    color: #ecf0f1;
 }
