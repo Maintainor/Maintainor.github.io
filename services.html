@@ -6,7 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maintainor | Our Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        header .logo h1 {
+            margin: 0;
+        }
+        header .nav-links a {
+            margin-right: 1rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        header .nav-links a.active {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #f4f4f4;
+        }
+        .hero-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .services {
+            padding: 2rem 2rem;
+            background: #fff;
+        }
+        .services-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .services-section {
+            margin-bottom: 2rem;
+            text-align: left;
+            padding-left: 1rem; /* Slight offset from the side */
+        }
+        .services-section h2 {
+            font-size: 1.8rem;
+            color: #222;
+            margin-bottom: 0.5rem;
+        }
+        .services-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        .services-section ul {
+            padding-left: 1.5rem;
+            list-style-type: disc;
+        }
+        .services-section ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -24,7 +104,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="services-hero" class="hero">
+    <section class="hero">
         <div class="hero-content">
             <h2>Our Services</h2>
             <p>Maintainor delivers professional maintenance, repair, and design solutions to elevate your property.</p>
@@ -32,7 +112,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section class="services">
         <div class="services-content">
             <!-- Maintenance -->
             <div class="services-section">
@@ -78,4 +158,5 @@
     </footer>
 </body>
 </html>
+
 
