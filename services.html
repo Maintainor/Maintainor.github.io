@@ -3,88 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Maintainor</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maintainor | Our Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <!-- Navbar (Exact same navbar as homepage) -->
+    <!-- Header with Navigation -->
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+            <div class="logo">
+                <h1>Maintainor</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a> <!-- Link to the homepage -->
+                <a href="services.html" class="active">Services</a> <!-- Highlight current page -->
+                <a href="contact.html">Contact</a> <!-- Link to the Contact page -->
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Section for Services Page (Identical to homepage) -->
-    <section class="hero">
-        <div class="container">
+    <!-- Hero Section -->
+    <section id="services-hero" class="hero">
+        <div class="hero-content">
             <h2>Our Services</h2>
-            <p>We offer a wide range of services to meet all your property maintenance and construction needs.</p>
-            <a href="contact.html" class="cta-button">Request a Quote</a>
+            <p>Comprehensive property maintenance, repair, and design solutions tailored to your needs.</p>
         </div>
     </section>
 
-    <!-- Services Section (Matching the homepage layout) -->
-    <section class="services">
-        <div class="container">
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/design-construction.jpg" alt="Design & Construction">
-                </div>
-                <h3>Design & Construction</h3>
-                <p>From concept to completion, we offer high-quality design and construction services for all your property needs.</p>
-                <ul>
-                    <li>New Builds</li>
-                    <li>Renovations & Extensions</li>
-                    <li>Custom Design Work</li>
-                </ul>
-            </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>What We Offer</h2>
+        
+        <!-- Maintenance Section -->
+        <div class="service-category">
+            <h3>Maintenance</h3>
+            <p>Regular care to keep your property running smoothly and looking its best.</p>
+            <ul>
+                <li>Landscaping and lawn care</li>
+                <li>Routine inspections and upkeep</li>
+                <li>Gutter cleaning</li>
+            </ul>
+        </div>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/general-maintenance.jpg" alt="General Maintenance">
-                </div>
-                <h3>General Maintenance</h3>
-                <p>We provide regular property maintenance to ensure everything stays in top condition.</p>
-                <ul>
-                    <li>Repairs & Replacements</li>
-                    <li>Landscaping</li>
-                    <li>General Fixes & Upkeep</li>
-                </ul>
-            </div>
+        <!-- Repair Section -->
+        <div class="service-category">
+            <h3>Repair</h3>
+            <p>Quick, reliable fixes for issues big and small.</p>
+            <ul>
+                <li>Plumbing and electrical repairs</li>
+                <li>Structural damage restoration</li>
+                <li>Appliance servicing</li>
+            </ul>
+        </div>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/property-management.jpg" alt="Property Management">
-                </div>
-                <h3>Property Management</h3>
-                <p>We handle all aspects of property management, including inspections, maintenance, and tenant services.</p>
-                <ul>
-                    <li>Tenant Relations</li>
-                    <li>Property Inspections</li>
-                    <li>Maintenance & Repairs</li>
-                </ul>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/renovation.jpg" alt="Renovation & Remodeling">
-                </div>
-                <h3>Renovation & Remodeling</h3>
-                <p>Whether you're updating a single room or remodeling your entire property, we specialize in high-quality renovations.</p>
-                <ul>
-                    <li>Bathroom & Kitchen Remodeling</li>
-                    <li>Flooring & Painting</li>
-                    <li>Custom Interior Designs</li>
-                </ul>
-            </div>
+        <!-- Design Section -->
+        <div class="service-category">
+            <h3>Design</h3>
+            <p>Creative solutions to bring your vision to life.</p>
+            <ul>
+                <li>Interior and exterior renovations</li>
+                <li>Custom furniture and fixtures</li>
+                <li>Space planning and remodeling</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Footer (Identical to homepage footer) -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Maintainor. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Maintainor. All rights reserved.</p>
+            <p><a contact us at themaintanor@gmail.com</a> 
+        </div>
     </footer>
 </body>
 </html>
