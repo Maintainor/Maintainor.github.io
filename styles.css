@@ -198,48 +198,44 @@ footer a {
 }
 
 .services {
-    text-align: center;
     padding: 2rem;
+    text-align: center;
 }
 
-.services-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+.services-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.service-category {
-    width: 300px;
-    text-align: left; /* Aligns text consistently */
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.services-section {
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
-.service-category h3 {
+.services-section h2 {
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-.service-category p {
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
+.services-section p {
+    font-size: 1rem;
     color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.service-category ul {
-    padding-left: 1rem;
+.services-section ul {
+    padding-left: 1.5rem;
     list-style-type: disc;
 }
 
-.hero-content h2 {
-    margin-bottom: 1rem;
+.services-section ul li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
 }
 
-
-footer a:hover {
-    color: #ecf0f1;
+.hero-content h2, .hero-content p {
+    max-width: 600px;
+    margin: 0 auto;
 }
-
