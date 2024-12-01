@@ -7,100 +7,136 @@
     <title>Maintainor | Our Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
+        /* Global Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333; /* Dark text for contrast */
             line-height: 1.6;
-            color: #333;
         }
+
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark blue for headings */
+        }
+
+        /* Header (Navbar) */
         header {
-            background: #222;
-            color: #fff;
-            padding: 1rem 2rem;
+            background-color: #3498db; /* Bright blue background */
+            padding: 20px 0;
+            text-align: center;
         }
-        header .logo h1 {
-            margin: 0;
-            font-size: 1.8rem;
+
+        nav .logo h1 {
+            color: #fff; /* White logo text */
+            font-size: 2rem;
         }
-        header .nav-links {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+
+        nav .nav-links {
+            margin-top: 10px;
         }
-        header .nav-links a {
-            margin-right: 1rem;
+
+        nav .nav-links a {
             color: #fff;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-            transition: background-color 0.3s;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
         }
-        header .nav-links a:hover {
-            background-color: #444;
-            border-radius: 5px;
+
+        nav .nav-links a:hover {
+            color: #ecf0f1; /* Light gray hover effect */
         }
-        header .nav-links a.active {
-            text-decoration: underline;
-            font-weight: bold;
-        }
+
+        /* Hero Section */
         .hero {
+            background-color: #2ecc71; /* Fresh green background */
+            color: #fff;
             text-align: center;
-            padding: 3rem 1rem;
-            background: #f4f4f4;
+            padding: 80px 20px;
         }
-        .hero-content h2 {
+
+        .hero h2 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #222;
+            margin-bottom: 15px;
         }
-        .hero-content p {
-            font-size: 1.2rem;
-            margin: 0 auto;
-            max-width: 600px;
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
         }
+
+        .hero .cta-button {
+            background-color: #ecf0f1; /* Light gray background */
+            color: #2c3e50;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #bdc3c7; /* Darker gray for hover effect */
+        }
+
+        /* Services Section */
         .services {
-            padding: 2rem 2rem;
-            background: #fff;
+            padding: 50px 20px;
+            background-color: #ffffff; /* White background */
         }
+
         .services-content {
             max-width: 800px;
             margin: 0 auto;
         }
+
         .services-section {
             margin-bottom: 2rem;
             text-align: left;
             padding-left: 1rem; /* Slight offset from the side */
         }
+
         .services-section h2 {
             font-size: 1.8rem;
-            color: #222;
+            color: #3498db; /* Bright blue for headings */
             margin-bottom: 0.5rem;
         }
+
         .services-section p {
             font-size: 1rem;
             color: #555;
             margin-bottom: 1rem;
             line-height: 1.8;
         }
+
         .services-section ul {
             padding-left: 1.5rem;
             list-style-type: disc;
         }
+
         .services-section ul li {
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
         }
+
+        /* Footer */
         footer {
-            background: #222;
+            background-color: #3498db;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 1rem 0;
         }
+
         footer a {
             color: #fff;
-            text-decoration: underline;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -174,6 +210,3 @@
     </footer>
 </body>
 </html>
-
-
-
